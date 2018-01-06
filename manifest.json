@@ -1,7 +1,11 @@
 {
     "manifest_version": 2,
     "name": "Mikah's Utility Extension",
+<<<<<<< HEAD
     "version": "0.1.2",
+=======
+    "version": "0.1.1",
+>>>>>>> a7bd3a2eae8aad39caf0433b76e095e27653d15f
     "content_scripts": [{
         "matches": [
             "<all_urls>"
@@ -17,6 +21,12 @@
     },
     "permissions": [
         "webRequest",
+<<<<<<< HEAD
         "*://*.google.com/"
     ]
+=======
+        "*://*.google.com/",
+    ]
+
+>>>>>>> a7bd3a2eae8aad39caf0433b76e095e27653d15f
 }
