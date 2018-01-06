@@ -1,0 +1,58 @@
+html, body {
+    height: 580px;
+    min-width: 550px;
+    background-color: rgb(27, 33, 77);
+    color: white;
+}
+
+.main {
+    height: 530px;
+}
+
+.homepage {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#content {
+    margin-top: 30px;
+}
+
+.input-group {
+    width: 80%;
+    margin: auto;
+}
+
+.container-fluid {
+    padding: 0px 10px 0px 10px;
+}
+
+img {
+    width: 40px;
+    height: auto;
+}
+
+canvas {
+    width: 150px;
+    height: auto;
+}
+
+.weather-icon, .display {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.footer {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(69, 69, 69);
+    display: block;
+}
