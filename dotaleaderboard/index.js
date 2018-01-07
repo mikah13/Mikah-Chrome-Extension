@@ -19,10 +19,13 @@ $(document).ready(function() {
             let thead = "<thead class='thead-dark'><tr><th class='rank'>Division Rank</th><th id='header-player' class='player'>Player</th</tr></thead>";
             let rows = "";
             data.forEach((a, b) => {
+                console.log(a);
                 let imgurl = "http://steamcommunity-a.akamaihd.net/public/images/countryflags/"
-                let team = a.teamtag
-                    ? teamtag + "."
+
+                let team = a.team_tag
+                    ? a.team_tag + "."
                     : "";
+
                 let player = a.name;
                 let sponsor = a.sponsor
                     ? "." + a.sponsor
@@ -33,7 +36,6 @@ $(document).ready(function() {
                 let name = team + player + sponsor;
                 rows += `<tr><td class='rank'>${b + 1}</td><td>${name}<span>${country}</span></td></tr>`;
             })
-            console.log(thead);
             table.html(thead + rows);
             content.html(table);
         })
@@ -48,8 +50,8 @@ $(document).ready(function() {
         let rows = "";
         data.forEach((a, b) => {
             let imgurl = "http://steamcommunity-a.akamaihd.net/public/images/countryflags/"
-            let team = a.teamtag
-                ? teamtag + "."
+            let team = a.team_tag
+                ? a.team_tag + "."
                 : "";
             let player = a.name;
             let sponsor = a.sponsor
@@ -60,6 +62,7 @@ $(document).ready(function() {
                 : "";
             let name = team + player + sponsor;
             rows += `<tr><td class='rank'>${b + 1}</td><td>${name}<span>${country}<span></td></tr>`;
+
         })
         table.html(thead + rows);
         content.html(table);
