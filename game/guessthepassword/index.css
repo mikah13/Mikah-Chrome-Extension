@@ -1,0 +1,55 @@
+* {
+    font-family: "Courier New";
+    font-weight: bold;
+    color: #0f0;
+}
+
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 580px;
+    min-width: 550px;
+    margin: 0;
+    background: black;
+}
+
+#header {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+p {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #000;
+    border: 5px solid #0f0;
+    border-radius: 10px;
+    font-size: 30px;
+    display: block;
+    margin: 0px auto;
+    font-family: "Courier New";
+}
+
+.hide {
+    display: none;
+}
+
+ul {
+    height: 300px;
+    font-size: 20px;
+}
+
+li:hover {
+    font-size: 25px;
+    color: rgb(255, 253, 29);
+}
+
+.homepage {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}

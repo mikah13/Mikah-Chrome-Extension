@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Guess The Password</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div id='container-fluid'>
+        <div class="homepage">
+            <a href="../index.html">Game</a>
+        </div>
+        <div id="menu">
+            <h1 class="text-center" id="header">Guess The Password</h1>
+            <p class="text-center">
+                Given a list of potential passwords, try to guess the correct one.
+            </p>
+            <p class="text-center">
+                If you're wrong, we'll tell you how many letters are correct.
+            </p>
+            <button> Start </button>
+        </div>
+        <div class="hide" id="game-screen">
+            <div class="display">
+                <ul class="text-center list-unstyled">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="guess-count">
+                </div>
+            </div>
+            <div class="result">
+                <p class="text-center">
+                </p>
+                <button>Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
