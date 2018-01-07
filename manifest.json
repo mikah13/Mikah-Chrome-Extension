@@ -20,5 +20,4 @@
         "webRequest",
         "*://*.google.com/"
     ]
-
 }
