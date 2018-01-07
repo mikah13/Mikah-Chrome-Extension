@@ -3,9 +3,12 @@
     "name": "Mikah's Utility Extension",
 
     "version": "0.1.2",
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 9b4a3e2e3b56d69693847d07dcdd13315a646e98
     "content_scripts": [{
         "matches": [
             "<all_urls>"
@@ -21,7 +24,13 @@
     },
     "permissions": [
         "webRequest",
+<<<<<<< HEAD
 
         "*://*.google.com/"
     ]
+=======
+        "*://*.google.com/"
+    ]
+
+>>>>>>> 9b4a3e2e3b56d69693847d07dcdd13315a646e98
 }
