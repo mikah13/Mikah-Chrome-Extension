@@ -2,12 +2,12 @@
     "manifest_version": 2,
     "name": "Mikah's Utility Extension",
 
-    "version": "0.1.3",
+    "version": "0.1.3.1",
     "content_scripts": [{
         "matches": [
             "<all_urls>"
         ],
-        "js": ["js/jquery-3.2.1.min.js", "content.js", "js/index.js"]
+        "js": ["assets/js/jquery-3.2.1.min.js", "content.js", "assets/js/index.js"]
     }],
     "browser_action": {
         "default_icon": "logo.png",
