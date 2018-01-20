@@ -181,7 +181,6 @@ $(document).ready(function() {
                 keycode.html(e.which);
                 keyname.html(keyCodes[e.which]);
             }
-
         });
     }
 

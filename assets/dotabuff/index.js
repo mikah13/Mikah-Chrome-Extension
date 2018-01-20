@@ -60,7 +60,7 @@ $(document).ready(function() {
                     ? data.solo_competitive_rank
                     : "----"
                 let solo = `<td>Solo MMR:${soloMMR}</td>`;
-                let steam = `<td><a href='data.profile.profileurl'>ID: ${data.profile.account_id}</a></td>`
+                let steam = `<td><a href='${data.profile.profileurl}' target="_blank">ID: ${data.profile.account_id}</a></td>`
                 let dotabuff = '<td><a href="https://www.dotabuff.com/players/' + id + '" target="_blank" >DOTABUFF</a></td>'
 
                 tr.html(avatar + name + solo + steam + dotabuff);

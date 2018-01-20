@@ -35,7 +35,8 @@ $(document).ready(function() {
         let time = day + ', ' + date + ' ' + month + ' ' + year;
         return time;
     }
-    $("#find").click(function() {
+
+    function getWeather() {
         let address = $("#input").val().split(" ").join("+");
         let google_key = "AIzaSyACObD_IqVU6wHYa9uiroiraZbkXDNBwJw";
         let google_url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${google_key}`
@@ -63,7 +64,6 @@ $(document).ready(function() {
                 $(document).on("click", "#change", function() {
                     if (state === true) {
                         var fahrenheit = changeCelsiusDegree($("#cel").text());
-
                         $("#cel").html(fahrenheit.toFixed());
                         $("#change").html("&deg;F");
                         state = false;
@@ -75,6 +75,16 @@ $(document).ready(function() {
                 });
             })
         })
-    })
+    }
 
-})
+    $(document).on("keydown", function(e) {
+        if (e.which === 13) {
+            e.preventDefault();
+            getWeather();
+
+        }
+    });
+    $("#find").click(function() {
+        getWeather();
+    })
+});
